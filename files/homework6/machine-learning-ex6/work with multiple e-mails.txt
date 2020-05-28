@@ -1,0 +1,17 @@
+The matlab command
+
+MyFolderInfo=dir('folderThatContainsTheEmails\0*')
+
+will collect all the email information in that folder whose file name start with '0'. And the command
+
+MyFolderInfo.name
+
+yields a list of file names. Or you can use the command
+
+MyFolderInfo（i). names
+
+to obtain the ith email name. Or
+
+length(MyFolderInfo)
+
+to get the total number of emails in the folder, which is useful to iterate through all files.
